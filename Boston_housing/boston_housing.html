@@ -13828,7 +13828,7 @@ MzMzMzMzs6b5H3qAc93jdsfZAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Graph with max_depth = 3.
-The score of the training curve approaches towards the equilibrium point[rises until it starts to get point where increasing data won't result in change in the score]. Similarly the score of testing curve approached the equilibrium point[it flattens after a required number of data points, increase in training points won't affect the score]. Having more training points after 300 points won't give an effective change in the score.</p>
+The score of the training curve approaches towards the equilibrium point[falls until it starts to get point where increasing data won't result in change in the score]. Similarly the score of testing curve approached the equilibrium point[it flattens after a required number of data points, increase in training points won't affect the score]. Having more training points after 300 points won't give an effective change in the score.</p>
 
 </div>
 </div>
@@ -14647,7 +14647,7 @@ At maximum depth = 10, the model suffers with high variance as training score is
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Separating the data in to K parts such that each part serves a testing data in one computation. This way the assessment is more accurate since the average of all the data is taken. Since your testing and training on the whole data. If cross validation is not performed in grid serach there is chance of getting a bad score or accuracy, since there is chance that the data arranged in such a way that the model overfits.</p>
+<p>Separating the data in to K parts such that each part serves a testing data in one computation[i.e taking one part as testing set and others as training sets. Repeating this process for each set until all are serve as testing sets]. This way the assessment is more accurate since the average over all the scores is the final result. Since your testing and training on the whole data. If cross validation is not performed in grid serach there is chance of getting a bad score or accuracy, since there is chance that the data arranged in such a way that the model overfits.</p>
 
 </div>
 </div>
@@ -14967,7 +14967,7 @@ Predicted selling price for Client 3&#39;s home: $942,666.67
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Predicted selling price for the client's is 391,183.33, 189,123.53 and 942,666.67 respectively</p>
+<p>Predicted selling price for the client's is 391,183.33, 189,123.53 and 942,666.67 respectively. Yes these price make sense as the they follow the trend dicussed above [increase in room increases the price while increase in other two parameters(LSTAT,PTRATIO) decreases the prices]</p>
 
 </div>
 </div>
