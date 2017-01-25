@@ -1,0 +1,14 @@
+Good work discussing the performance of the tuned model, and congrats on improving the accuracy and F-score!
+
+If you're interested, you could also experiment with improving the F1 test score by tuning other parameters. For example...
+
+parameters = {'learning_rate': [0.01, 0.1],
+              'subsample': [0.5, 0.6, 0.8, 1.],
+              'max_features': [0.8, 0.9, None],
+              'max_depth': [1, 2, 3]}
+
+# The default grid search uses 3 folds; use the 'cv' param to specify more
+grid_obj = GridSearchCV(clf, parameters, cv=4,
+                        scoring=scorer, n_jobs=-1)
+See more on boosting here:
+https://www.analyticsvidhya.com/blog/2015/11/quick-introduction-boosting-algorithms-machine-learning/
